@@ -116,11 +116,11 @@ public class GCMIntentService extends GCMBaseIntentService {
 		}
 		
 		if (extras.getString("bigview") != null) {
-+			boolean bigview = Boolean.parseBoolean(extras.getString("bigview"));
-+			if (bigview) {
-+				mBuilder.setStyle(new NotificationCompat.BigTextStyle().bigText(message));
-+			}
-+		}
+			boolean bigview = Boolean.parseBoolean(extras.getString("bigview"));
+			if (bigview) {
+				mBuilder.setStyle(new NotificationCompat.BigTextStyle().bigText(message));
+			}
+		}
 
 		String msgcnt = extras.getString("msgcnt");
 		if (msgcnt != null) {
